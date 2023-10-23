@@ -53,9 +53,9 @@ public class LocatorsPractice {
 		//get all the links on the page
 		int link = driver.findElements(By.tagName("a")).size();     //imp:- if we use findelements the we can use the "size" but if use findelement the we can use "getsize" 		
 	System.out.println("Total Links "+link);
-	
+	Thread.sleep(2000);
 	//cssSelectors
-	driver.findElement(By.cssSelector("[title=\"Assign Leave\"]")).click();
+	driver.findElement(By.xpath("//button[@title='Assign Leave']")).click();
 	Thread.sleep(2000); //it is important to wait for the page to load completely, only then the other step will work.
 	
 	//xpath different options
@@ -72,6 +72,8 @@ public class LocatorsPractice {
 	
 	driver.findElement(By.xpath("//div[starts-with(@tabindex,'0')]")).click(); //using 'starts-with'
 	driver.findElement(By.xpath("//div[text(),'CAN - Bereavement']")).click();
+	
+	
 	
 	Thread.sleep(2000);
 	}

@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-    features = "/Users/harshitabhardwaj/eclipse-workspace/Basicproject/features/Locators.feature",  // Specify the directory where your feature files are located
+    features = "/C:/Users/yashg/Documents/GitHub/Basicproject/features/Locators.feature",  // Specify the directory where your feature files are located
     glue = "stepdefinations",             // Specify the package where your step definitions are located
     dryRun = false,
     monochrome = true,
